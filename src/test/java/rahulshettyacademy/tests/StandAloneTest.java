@@ -25,6 +25,7 @@ public class StandAloneTest {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
+		//Codigo para espera de 10 segundos y así poder ingresar al navegador con la URL descrita en el codigo
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://rahulshettyacademy.com/client");
 		driver.manage().window().maximize();
