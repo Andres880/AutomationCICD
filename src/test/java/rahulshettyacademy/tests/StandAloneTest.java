@@ -59,6 +59,7 @@ public class StandAloneTest {
 	
 	driver.findElement(By.xpath("(//button[contains(@class,'ta-item')])[2]")).click();
 	
+	//Click al botón
 	driver.findElement(By.cssSelector("div.actions a")).click();
 	
 	String respuesta = driver.findElement(By.cssSelector("h1.hero-primary")).getText();
